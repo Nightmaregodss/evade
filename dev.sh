@@ -107,6 +107,5 @@ fi
   display   
   launchJavaServer
 fi
-fi
   display   
   launchJavaServer
