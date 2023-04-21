@@ -58,7 +58,7 @@ then
     display
 sleep 5
 echo "
-  $(tput setaf 3)Which platform are you gonna use?
+  $(tput setaf 6)Just type 1 in chat to install.
   1) Install
   "
 read -r n
