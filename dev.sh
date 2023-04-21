@@ -68,7 +68,7 @@ case $n in
   1) 
     sleep 1
 
-    echo "$(tput setaf 3)Downloading 1.19.2, please be patient."
+    echo "$(tput setaf 6)Downloading the server!"
 
     sleep 4
 
