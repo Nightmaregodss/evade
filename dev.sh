@@ -8,7 +8,7 @@ function display {
     #Display MOTD
     echo "
     ==========================================================================
-    $(tput setaf 6)   Ehhh
+    $(tput setaf 6)   Ehhh, Yamete kudasai! Hicster is gay!
     ==========================================================================
     "  
 }
