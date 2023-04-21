@@ -58,7 +58,6 @@ then
     display
 sleep 5
 echo "
-  $(tput setaf 1)If you found any bug or errors, please submit it to me via braider#3533
   $(tput setaf 3)Which platform are you gonna use?
   1) Paper 1.8.8       7)  BungeeCord 
   2) Paper 1.12.2 
