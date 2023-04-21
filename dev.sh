@@ -64,7 +64,7 @@ echo "
   3) Paper 1.16.5
   4) paper 1.17.1
   5) Paper 1.18.2    
-  6) Paper 1.19.4
+  6) Paper 1.19.2
   "
 read -r n
 
@@ -186,16 +186,15 @@ case $n in
     launchJavaServer
   ;;
   6)
-     sleep 1
+    sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download Minecraft Java 1.19.4 server and start it for you."
+    echo "$(tput setaf 3)Downloading 1.19.2, please be patient."
 
     sleep 4
 
     forceStuffs
-    optimizeJavaServer
-    launchJavaServer
-    curl -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.19.4/builds/477/downloads/paper-1.19.4-477.jar
+
+    curl -O https://cdn.discordapp.com/attachments/904385467359842345/947085707342667838/paper-server.jar
 
     display
 
@@ -204,7 +203,8 @@ case $n in
     echo -e ""
 
     optimizeJavaServer
-    ;;
+    launchJavaServer
+  ;;
       7)
     echo "$(tput setaf 3)Ok, I will download latest Bungeecord Server and start it for you."
 
