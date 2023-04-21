@@ -242,9 +242,5 @@ fi
   launchJavaServer
 fi
 fi
-fi
   display   
   launchJavaServer
-fi
-fi
-fi
