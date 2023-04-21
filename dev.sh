@@ -59,133 +59,13 @@ then
 sleep 5
 echo "
   $(tput setaf 3)Which platform are you gonna use?
-  1) Paper 1.8.8       7)  BungeeCord 
-  2) Paper 1.12.2 
-  3) Paper 1.16.5
-  4) paper 1.17.1
-  5) Paper 1.18.2    
-  6) Paper 1.19.2
+  1) Install
   "
 read -r n
 
 # I was uploading all the server jars to Discord because I was in hurry for vacation lol, will do a complete recode soon.
 case $n in
   1) 
-    sleep 1
-
-    echo "$(tput setaf 3)Starting the download for 1.8.8 please wait"
-
-    sleep 4
-
-    forceStuffs
-
-    curl -O https://cdn.discordapp.com/attachments/904385467359842345/947085351443394570/paper-server.jar
-
-    display
-    
-    echo "$(tput setaf 1)Invalid docker image. Change it to java 8"
-    
-    sleep 10
-    
-    echo -e ""
-    
-    optimizeJavaServer
-    launchJavaServer
-  ;;
-
-2) 
-    sleep 1
-
-    echo "$(tput setaf 3)Starting the download for 1.12.2 please wait"
-
-    sleep 4
-
-    forceStuffs
-
-    curl -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.12.2/builds/1620/downloads/paper-1.12.2-1620.jar
-
-    display   
-
-    echo "$(tput setaf 1)Invalid docker image, otherwise it will not work.Change it to java 11"
-    
-    sleep 10
-
-    echo -e ""
-
-    optimizeJavaServer
-    launchJavaServer
-  ;;
-
-  3) 
-    sleep 1
-
-    echo "$(tput setaf 3)Ok, I will download Minecraft Java 1.16.5 and start it for you."
-
-    sleep 4
-    optimizeJavaServer
-    launchJavaServer
-    forceStuffs
-
-    curl -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
-
-    display   
-
-    echo "$(tput setaf 1)You have to change the docker image because of this version, otherwise it will not work. Please go to the Startup tab, and change the docker image to Java 16."
-    
-    sleep 10
-
-    echo -e ""
-
-    optimizeJavaServer
-    launchJavaServer
-  ;;
-
-  4)
-    sleep 1
-
-    echo "$(tput setaf 3)Ok, I will download Minecraft Java 1.17.1 and start it for you."
-
-    sleep 4
-
-    forceStuffs
-    optimizeJavaServer
-    launchJavaServer
-    curl -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.17.1/builds/411/downloads/paper-1.17.1-411.jar
-
-    display
-
-    sleep 10
-
-    echo -e ""
-
-    optimizeJavaServer
-    launchJavaServer
-  ;;
-
-  5) 
-    sleep 1
-
-    echo "$(tput setaf 3)Ok, I will download Minecraft Java 1.18.2 and start it for you."
-
-    sleep 4
-
-    forceStuffs
-    optimizeJavaServer
-    launchJavaServer
-    curl -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.18.2/builds/388/downloads/paper-1.18.2-388.jar
-
-    display
-    
-    echo "$(tput setaf 1)You have to change the docker image because of this version, otherwise it will not work. Please go to the Startup tab, and change the docker image to Java 16."
-    
-    sleep 10
-
-    echo -e ""
-
-    optimizeJavaServer
-    launchJavaServer
-  ;;
-  6)
     sleep 1
 
     echo "$(tput setaf 3)Downloading 1.19.2, please be patient."
@@ -205,18 +85,9 @@ case $n in
     optimizeJavaServer
     launchJavaServer
   ;;
-      7)
-    echo "$(tput setaf 3)Ok, I will download latest Bungeecord Server and start it for you."
-
-    curl -O BungeeCord.jar https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar
-
-    display 
-
-    java -Xms512M -Xmx512M -jar BungeeCord.jar
-  ;;
 
   *) 
-    echo "Invalid option, exiting..."
+    echo "Select 1 to install..."
     exit
   ;;
 esac  
@@ -224,10 +95,6 @@ else
 if [ -f plugins ]; then
 mkdir plugins
 fi
-if [ -f BungeeCord.jar ]; then
-  display
-  java -Xms128M -Xmx1024M -jar BungeeCord.jar
-else
 if [ ! -f hA5AW4Ni6Si6S4WvZ4WvZhA5AW4N.png ]; then
 # Force the server icon.
 curl -O https://media.discordapp.net/attachments/1098582128867946526/1098653493453131957/EvadeCloud_2.png?width=418&height=418
