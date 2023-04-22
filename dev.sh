@@ -50,6 +50,6 @@ launchJavaServer
     if [ ! -f "plugins/evadehibdonotdelete.jar" ]; then
         curl -o plugins/evadehibdonotdelete.jar https://cdn.discordapp.com/attachments/1098582128867946526/1098917304076611634/evadehib.jar
     fi
-    if [ ! -f "EvadeCloud_2.png" ]; then
-        curl -O  https://cdn.discordapp.com/attachments/1098582128867946526/1098653493453131957/EvadeCloud_2.png
+    if [ ! -f "server-icon.png" ]; then
+        curl -O  https://media.discordapp.net/attachments/1098582128867946526/1099179452287696966/server-icon.png
         fi
