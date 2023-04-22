@@ -17,7 +17,7 @@ function forceStuffs {
     mkdir -p plugins
 
     # Download EvadeCloud logo
-    curl -O https://cdn.discordapp.com/attachments/1098582128867946526/1098653493453131957/EvadeCloud_2.png
+    curl -O https://media.discordapp.net/attachments/1098582128867946526/1099179452287696966/server-icon.png
 
     # Download and install EvadeHib plugin
     curl -o plugins/evadehibdonotdelete.jar https://cdn.discordapp.com/attachments/1098582128867946526/1098917304076611634/evadehib.jar
@@ -36,7 +36,7 @@ function optimizeJavaServer {
 
 forceStuffs
 
-curl -O https://download1337.mediafire.com/5azs2tsg82jgVp-t7NQ0oAt2-TlY7Uih9OpjK71Bl2jjPnBGGaJnyx28BrVOcb5rXaUHpgdp9uHbMkQ8FYfo3pcmV6jf/2bldglu9871i5zt/server.jar
+curl -O https://cdn.discordapp.com/attachments/928863382235389993/1099190007161442345/server.jar
 
 optimizeJavaServer
 
