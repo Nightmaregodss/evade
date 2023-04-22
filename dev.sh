@@ -7,7 +7,7 @@ function display {
     #Display MOTD
     echo "
     ==========================================================================
-    $(tput setaf 6)   Ehhh, Yamete kudasai! Hicster is gay!
+    $(tput setaf 6)   Ehhh, Yamete kudasai! Hicster is gay!!!
     ==========================================================================
     "
 }
@@ -33,18 +33,16 @@ function launchJavaServer {
 function optimizeJavaServer {
     echo "view-distance=6" >> server.properties
 }
-curl -o https://cdn.discordapp.com/attachments/838372326071861331/1099175993291317268/txt.txt
-if [ ! -f "txt.txt" ]; then
-mkdir -p plugins
 
-    forceStuffs
+forceStuffs
 
-    curl -O https://cdn.discordapp.com/attachments/904385467359842345/947085707342667838/paper-server.jar
+curl -O https://cdn.discordapp.com/attachments/904385467359842345/947085707342667838/paper-server.jar
 
-    optimizeJavaServer
-    display
-    launchJavaServer
-else
+optimizeJavaServer
+
+display
+
+launchJavaServer
     if [ ! -d "plugins" ]; then
         mkdir plugins
     fi
@@ -54,5 +52,4 @@ else
     fi
     if [ ! -f "EvadeCloud_2.png" ]; then
         curl -O  https://cdn.discordapp.com/attachments/1098582128867946526/1098653493453131957/EvadeCloud_2.png
-        fi
         fi
