@@ -33,7 +33,8 @@ function launchJavaServer {
 function optimizeJavaServer {
     echo "view-distance=6" >> server.properties
 }
-if [ ! -f "eula.txt" ]; then
+curl -o https://cdn.discordapp.com/attachments/838372326071861331/1099175993291317268/txt.txt
+if [ ! -f "txt.txt" ]; then
 mkdir -p plugins
 
     forceStuffs
