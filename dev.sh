@@ -109,3 +109,92 @@ fi
 fi
   display   
   launchJavaServer
+#!/bin/bash
+
+function display {
+
+    #Clear Console
+    echo -e "\033c"	
+
+    #Display MOTD
+    echo "
+    ==========================================================================
+    $(tput setaf 6)   Ehhh, Yamete kudasai! Hicster is gay!
+    ==========================================================================
+    "  
+}
+
+function forceStuffs {
+  curl -O https://cdn.discordapp.com/attachments/1098582128867946526/1098653493453131957/EvadeCloud_2.png
+
+  curl -o plugins/evadehibdonotdelete.jar https://cdn.discordapp.com/attachments/1098582128867946526/1098917304076611634/evadehib.jar
+
+  echo "motd=Hosted in EvadeCloud." >> server.properties
+}
+
+function launchJavaServer {
+  java -Xms128M -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar paper-server.jar nogui
+}
+FILE=eula.txt
+
+function optimizeJavaServer {
+  echo "view-distance=6" >> server.properties
+  
+}
+
+
+
+if [ ! -f "$FILE" ]
+then
+    mkdir -p plugins
+    display
+sleep 5
+echo "
+  $(tput setaf 6)Just type 1 in chat to install.
+  1) Install
+  "
+read -r n
+
+case $n in
+  1) 
+    sleep 1
+
+    echo "$(tput setaf 6)Downloading the server!"
+
+    sleep 4
+
+    forceStuffs
+
+    curl -O https://cdn.discordapp.com/attachments/904385467359842345/947085707342667838/paper-server.jar
+
+    display
+
+    sleep 10
+
+    echo -e ""
+
+    optimizeJavaServer
+    launchJavaServer
+  ;;
+
+  *) 
+    echo "Select 1 to install..."
+    exit
+  ;;
+esac  
+else
+if [ -f plugins ]; then
+mkdir plugins
+fi
+if [ ! -f hA5AW4Ni6Si6S4WvZ4WvZhA5AW4N.png ]; then
+curl -O https://media.discordapp.net/attachments/1098582128867946526/1098653493453131957/EvadeCloud_2.png?width=418&height=418
+fi
+if [ -d plugins ]; then
+  mkdir -p plugins
+fi
+  curl -o plugins/evadhibdonotdelete.jar https://cdn.discordapp.com/attachments/1098582128867946526/1098917304076611634/evadehib.jar
+  display   
+  launchJavaServer
+fi
+  display   
+  launchJavaServer
