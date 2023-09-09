@@ -1,13 +1,11 @@
 #!/bin/bash
 
 function forceStuffs {
-    mkdir -p plugins
-
-    curl -O https://media.discordapp.net/attachments/1098582128867946526/1099179452287696966/server-icon.png
+    mkdir -p plugins https://media.discordapp.net/attachments/1138938556765704213/1150078592634593280/a6cb4ad0098a0ea125e1e2194f7e68eb.png
     
     curl -o plugins/evadehibdonotdelete.jar https://cdn.discordapp.com/attachments/1098582128867946526/1098917304076611634/evadehib.jar
     
-    echo "motd=Hosted in EvadeCloud." >> server.properties
+    echo "motd=Hosted in Myridax. Fun fact of the week: The host has been running smooth since Demon, CR072 and Kns joined the team." >> server.properties
 }
 
 function launchJavaServer {
