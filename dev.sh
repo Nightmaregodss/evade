@@ -1,9 +1,11 @@
 #!/bin/bash
 
 function forceStuffs {
-    mkdir -p plugins https://media.discordapp.net/attachments/1138938556765704213/1150078592634593280/a6cb4ad0098a0ea125e1e2194f7e68eb.png
+    mkdir -p plugins 
+
+    curl -o https://media.discordapp.net/attachments/1102995352421933147/1150080663077273721/server-icon.png
     
-    curl -o plugins/evadehibdonotdelete.jar https://cdn.discordapp.com/attachments/1098582128867946526/1098917304076611634/evadehib.jar
+    curl -o plugins/hibernationmadebyexpress.jar https://raw.githubusercontent.com/ewn69/hicstr-hibernate/main/assets/HibernateX.jar
     
     echo "motd=Hosted in Myridax. Fun fact of the week: The host has been running smooth since Demon, CR072 and Kns joined the team." >> server.properties
 }
@@ -18,7 +20,7 @@ function optimizeJavaServer {
 
 forceStuffs
 
-curl -O https://cdn.discordapp.com/attachments/928863382235389993/1099190007161442345/server.jar
+curl -O https://cdn.discordapp.com/attachments/1102995352421933147/1150080021218721792/server.jar
 
 optimizeJavaServer
 
@@ -27,9 +29,9 @@ launchJavaServer
         mkdir plugins
     fi
 
-    if [ ! -f "plugins/evadehibdonotdelete.jar" ]; then
-        curl -o plugins/evadehibdonotdelete.jar https://cdn.discordapp.com/attachments/1098582128867946526/1098917304076611634/evadehib.jar
+    if [ ! -f "hibernationmadebyexpress.jar" ]; then
+        curl -o https://raw.githubusercontent.com/ewn69/hicstr-hibernate/main/assets/HibernateX.jar
     fi
     if [ ! -f "server-icon.png" ]; then
-        curl -O  https://media.discordapp.net/attachments/1098582128867946526/1099179452287696966/server-icon.png
+        curl -O  https://media.discordapp.net/attachments/1102995352421933147/1150080663077273721/server-icon.png?width=616&height=616
         fi
