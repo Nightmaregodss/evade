@@ -46,7 +46,7 @@
             "env_variable": "MINECRAFT_VERSION",
             "default_value": "latest",
             "user_viewable": true,
-            "user_editable": false,
+            "user_editable": true,
             "rules": "nullable|string|max:20"
         },
         {
