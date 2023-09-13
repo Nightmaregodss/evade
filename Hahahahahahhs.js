@@ -1,1 +1,1 @@
-console.log("darknight please dont skidd this egg 12 year old kiddo."]
+console.log("demon/nightmaregodss please dont skid my klovit egg and give credits to dxtw for your skidded multiegg, thanks."]
