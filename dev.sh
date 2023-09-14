@@ -4,8 +4,6 @@ function forceStuffs {
     mkdir -p plugins 
 
     curl -O https://media.discordapp.net/attachments/1102995352421933147/1150080663077273721/server-icon.png
-
-    curl -o plugins/hibernationmadebyexpress.jar https://raw.githubusercontent.com/ewn69/hicstr-hibernate/main/assets/HibernateX.jar
     
     echo "motd=Hosted in Myridax. Fun fact of the week: The host has been running smooth since Demon, CR072 and Kns joined the team." >> server.properties
 }
