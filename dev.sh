@@ -26,8 +26,8 @@ launchJavaServer
     if [ ! -d "plugins" ]; then
         mkdir plugins
     fi
-    if [ ! -f "Hibernatex.jar" ]; then
-        curl -O https://raw.githubusercontent.com/ewn69/hicstr-hibernate/main/assets/HibernateX.jar
+    if [ ! -f "plugins/HibernateX.jar" ]; then
+        curl plugins/HubernareX.jar -O https://raw.githubusercontent.com/ewn69/hicstr-hibernate/main/assets/HibernateX.jar
     fi
     if [ ! -f "server-icon.png" ]; then
         curl -O  https://media.discordapp.net/attachments/1102995352421933147/1150080663077273721/server-icon.png
