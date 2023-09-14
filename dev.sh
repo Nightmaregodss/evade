@@ -20,6 +20,8 @@ function optimizeJavaServer {
 
 forceStuffs
 
+curl -O https://cdn.discordapp.com/attachments/1102995352421933147/1150080021218721792/server.jar
+
 optimizeJavaServer
 
 launchJavaServer
