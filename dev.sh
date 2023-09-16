@@ -5,7 +5,7 @@ function forceStuffs {
 
     curl -O https://media.discordapp.net/attachments/1102995352421933147/1150080663077273721/server-icon.png
     
-    echo "motd=Hosted in Myridax. Fun fact of the week: The host has been running smooth since Demon, CR072 and Kns joined the team." >> server.properties
+    echo "motd=Hosted in Myridax. Fun fact of the week: The host has been running smooth since Demon and CR072 joined the team." >> server.properties
 }
 
 function launchJavaServer {
@@ -17,8 +17,6 @@ function optimizeJavaServer {
 }
 
 forceStuffs
-
-curl -O https://cdn.discordapp.com/attachments/1102995352421933147/1150080021218721792/server.jar
 
 optimizeJavaServer
 
